@@ -1,0 +1,108 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "init quiz",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "how ya doing man",
+            "say hello to me",
+            "hello there",
+            "good morning everyone",
+            "hey",
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "RandomFactIntent",
+          "slots": [],
+          "samples": [
+            "fact",
+            "random fact",
+            "give me a fact",
+            "fact time",
+            "tell me a fact",
+            "say a fact",
+            "fact of the day"
+          ]
+        },
+        {
+          "name": "SpecificFactIntent",
+          "slots": [
+            {
+              "name": "FactType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "i want to know about {FactType}",
+            "fact about {FactType}",
+            "tell me about {FactType}",
+            "give me a fact about {FactType}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "batman"
+              }
+            },
+            {
+              "name": {
+                "value": "giraffes"
+              }
+            },
+            {
+              "name": {
+                "value": "water"
+              }
+            },
+            {
+              "name": {
+                "value": "MLH"
+              }
+            },
+            {
+              "name": {
+                "value": "pizza"
+              }
+            }
+          ],
+          "name": "FactType"
+        }
+      ]
+    }
+  },
+  "version": "6"
+}
